@@ -1,0 +1,14 @@
+{
+  "job_id": "integration_tidal09",
+  "feel_artifact": true,
+  "mission": "Reproduce the sealed Builder, Scout, Adversary, and Verifier heartbeat on a different fixture without granting completion authority. Preserve disagreement and admit artifacts only through operator-owned contracts and gates.",
+  "artifact_contracts": [
+    {
+      "id": "builder_tidal09_contract",
+      "artifact_name": "builder_tidal09.html",
+      "format": "html",
+      "minimum_bytes": 256,
+      "validators": ["static_html"]
+    }
+  ]
+}

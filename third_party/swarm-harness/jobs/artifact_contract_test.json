@@ -1,0 +1,11 @@
+{
+  "job_id": "artifact_contract_test",
+  "feel_artifact": false,
+  "mission": "Deterministically prove operator-owned artifact contracts against sealed mirror-study fixtures.",
+  "artifact_contracts": [
+    {"id": "t1_bad_contract", "artifact_name": "t1_bad.html", "format": "html", "minimum_bytes": 256, "validators": ["t1_shape"]},
+    {"id": "t1_conforming_contract", "artifact_name": "t1_conforming.html", "format": "html", "minimum_bytes": 256, "validators": ["t1_shape"]},
+    {"id": "t2_placeholder_contract", "artifact_name": "candidate_a.html", "format": "html", "minimum_bytes": 256, "validators": ["t1_shape"]},
+    {"id": "t4_bad_contract", "artifact_name": "t4_bad.html", "format": "html", "minimum_bytes": 256, "validators": ["t1_shape"]}
+  ]
+}

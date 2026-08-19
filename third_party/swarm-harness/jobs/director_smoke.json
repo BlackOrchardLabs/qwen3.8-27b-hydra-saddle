@@ -1,0 +1,10 @@
+{
+  "job_id": "director_smoke",
+  "feel_artifact": true,
+  "mission": "Use tools to build two distinct complete particle pages, gate them, judge both FULL artifacts, verify the finding, repair only the weaker page into a new artifact using the exact receipt, gate the repair, preserve contradictions, and finish at GATED rather than DONE.",
+  "artifact_contracts": [
+    {"id": "dir_a_contract", "artifact_name": "dir_a.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "dir_b_contract", "artifact_name": "dir_b.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "dir_repaired_contract", "artifact_name": "dir_repaired.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]}
+  ]
+}

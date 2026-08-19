@@ -1,0 +1,10 @@
+{
+  "job_id": "particle_demo",
+  "feel_artifact": true,
+  "mission": "Build two genuinely different self-contained HTML particle pages in parallel. Each must fill the viewport, use Canvas 2D, animate immediately, respond to pointer movement, contain no external assets, and be visibly rich at rest before any pointer input so a screenshot pixel gate passes. Call them particle_a.html and particle_b.html. Gate each with html_render; any red gate ends the job immediately. Retrieve both COMPLETE artifacts. Dispatch an Adversary with both FULL artifact ids to identify the weaker page and its single worst concrete defect. Then dispatch a Verifier/Integrator with both FULL artifact ids and input_result_task_ids naming the Adversary task; do not paste reports or artifacts into tool arguments. Repair only the confirmed loser's worst defect into a new complete artifact named particle_repaired.html; use error_receipt_task_id naming the Verifier task so the harness carries the exact immutable receipt, plus the smallest-fix instruction. Gate the repaired artifact with html_render. Finish with an unflattened contradictions array. This is a feel-artifact: the only lawful terminal result is GATED, never DONE.",
+  "artifact_contracts": [
+    {"id": "particle_a_contract", "artifact_name": "particle_a.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "particle_b_contract", "artifact_name": "particle_b.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "particle_repaired_contract", "artifact_name": "particle_repaired.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]}
+  ]
+}

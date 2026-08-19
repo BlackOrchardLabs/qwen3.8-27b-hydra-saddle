@@ -1,0 +1,31 @@
+{
+  "job_id": "scripted_smoke",
+  "feel_artifact": false,
+  "mission": "Run two independent builders through the wide seat in parallel and gate both outputs.",
+  "artifact_contracts": [
+    {"id": "scripted_a_contract", "artifact_name": "scripted_a.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "scripted_b_contract", "artifact_name": "scripted_b.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]}
+  ],
+  "tasks": [
+    {
+      "task_id": "scripted_a",
+      "role": "Builder",
+      "seat": "swarm",
+      "prompt": "Create a complete self-contained animated Canvas particle page A. Return only HTML.",
+      "artifact_name": "scripted_a.html",
+      "artifact_contract_id": "scripted_a_contract",
+      "input_artifact_ids": [],
+      "gates": ["static_html"]
+    },
+    {
+      "task_id": "scripted_b",
+      "role": "Builder",
+      "seat": "swarm",
+      "prompt": "Create a complete self-contained animated Canvas particle page B. Return only HTML.",
+      "artifact_name": "scripted_b.html",
+      "artifact_contract_id": "scripted_b_contract",
+      "input_artifact_ids": [],
+      "gates": ["static_html"]
+    }
+  ]
+}

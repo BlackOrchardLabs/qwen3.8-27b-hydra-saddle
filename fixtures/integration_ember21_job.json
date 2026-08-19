@@ -1,0 +1,14 @@
+{
+  "job_id": "integration_ember21",
+  "feel_artifact": true,
+  "mission": "Run the sealed Builder, Scout, Adversary, and Verifier heartbeat without granting completion authority. Preserve disagreement and admit artifacts only through operator-owned contracts and gates.",
+  "artifact_contracts": [
+    {
+      "id": "builder_ember21_contract",
+      "artifact_name": "builder_ember21.html",
+      "format": "html",
+      "minimum_bytes": 256,
+      "validators": ["static_html"]
+    }
+  ]
+}

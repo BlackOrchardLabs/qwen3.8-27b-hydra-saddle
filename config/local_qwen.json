@@ -1,0 +1,7 @@
+{
+  "max_concurrent_dispatches": 4,
+  "max_calls_per_job": 24,
+  "max_rounds_per_job": 6,
+  "call_timeout_ms": 300000
+}
+

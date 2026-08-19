@@ -1,0 +1,57 @@
+{
+  "director": {
+    "endpoint": "http://127.0.0.1:18972/v1/chat/completions",
+    "model": "mock",
+    "system_anchor": "Deterministic director for tests.",
+    "max_tokens": 1024,
+    "temperature": 0,
+    "max_steps": 20
+  },
+  "workers": [
+    {
+      "id": "test-solo",
+      "seat": "solo",
+      "endpoint": "http://127.0.0.1:18972/v1/chat/completions",
+      "model": "mock",
+      "max_concurrency": 1,
+      "system_anchor": "Text-only test worker. No tools."
+    },
+    {
+      "id": "test-swarm-0",
+      "seat": "swarm",
+      "endpoint": "http://127.0.0.1:18972/v1/chat/completions",
+      "model": "mock",
+      "max_concurrency": 1,
+      "system_anchor": "Text-only test worker. No tools."
+    },
+    {
+      "id": "test-swarm-1",
+      "seat": "swarm",
+      "endpoint": "http://127.0.0.1:18972/v1/chat/completions",
+      "model": "mock",
+      "max_concurrency": 1,
+      "system_anchor": "Text-only test worker. No tools."
+    }
+  ],
+  "caps": {
+    "max_concurrent_workers": 2,
+    "max_total_tasks": 16,
+    "max_tokens_per_task": 2048,
+    "max_wall_seconds": 120,
+    "max_artifact_bytes": 1048576
+  },
+  "gates": {
+    "t1_shape": {
+      "argv": ["python3", "{organ_dir}/scripts/t1_shape_gate.py", "{artifact}"],
+      "timeout_seconds": 10
+    },
+    "static_html": {
+      "argv": ["python3", "{organ_dir}/scripts/static_html_gate.py", "{artifact}"],
+      "timeout_seconds": 10
+    },
+    "planted_failure": {
+      "argv": ["python3", "{organ_dir}/scripts/planted_fail_gate.py", "{artifact}"],
+      "timeout_seconds": 10
+    }
+  }
+}

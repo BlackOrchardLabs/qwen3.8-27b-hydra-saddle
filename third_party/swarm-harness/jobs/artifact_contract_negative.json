@@ -1,0 +1,20 @@
+{
+  "job_id": "artifact_contract_negative",
+  "feel_artifact": false,
+  "mission": "Shipped negative control: the sealed 16-byte placeholder must be refused by its declared artifact contract.",
+  "artifact_contracts": [
+    {"id": "candidate_a_contract", "artifact_name": "candidate_a.html", "format": "html", "minimum_bytes": 256, "validators": ["t1_shape"]}
+  ],
+  "tasks": [
+    {
+      "task_id": "candidate_a",
+      "role": "Builder",
+      "seat": "swarm",
+      "prompt": "FIXTURE_T2_PLACEHOLDER",
+      "artifact_name": "candidate_a.html",
+      "artifact_contract_id": "candidate_a_contract",
+      "input_artifact_ids": [],
+      "gates": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "job_id": "planted_failure",
+  "feel_artifact": false,
+  "mission": "Create one complete self-contained animated Canvas particle page. This is an acceptance canary: its configured gate is intentionally impossible to pass, so the job must honestly terminate FAILED and nothing may be described as shipped.",
+  "artifact_contracts": [
+    {"id": "planted_page_contract", "artifact_name": "planted_page.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "red_pen_contract", "artifact_name": "red_pen.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]}
+  ],
+  "tasks": [
+    {
+      "task_id": "planted_page",
+      "role": "Builder",
+      "seat": "swarm",
+      "prompt": "Create a complete self-contained animated Canvas 2D particle page. Return only the complete HTML.",
+      "artifact_name": "planted_page.html",
+      "artifact_contract_id": "planted_page_contract",
+      "input_artifact_ids": [],
+      "gates": ["planted_failure"]
+    }
+  ]
+}

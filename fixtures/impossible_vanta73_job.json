@@ -1,0 +1,14 @@
+{
+  "job_id": "integration_vanta73",
+  "feel_artifact": true,
+  "mission": "Prove the discovery-only frontier on VANTA-73 through the accepted integrated heartbeat. Preserve disagreement, admit the Builder artifact only through operator-owned contracts and gates, and leave completion authority outside the model.",
+  "artifact_contracts": [
+    {
+      "id": "builder_vanta73_contract",
+      "artifact_name": "builder_vanta73.html",
+      "format": "html",
+      "minimum_bytes": 256,
+      "validators": ["static_html"]
+    }
+  ]
+}

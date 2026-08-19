@@ -1,0 +1,7 @@
+{
+  "job_id": "phase_a_live",
+  "feel_artifact": true,
+  "mission": "Prove Dispatch Organ Phase A cast, dispatch, and result provenance on a local worker. External completion remains operator-owned.",
+  "artifact_contracts": [],
+  "required_gates": []
+}

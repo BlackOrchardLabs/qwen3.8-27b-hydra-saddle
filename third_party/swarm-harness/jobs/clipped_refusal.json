@@ -1,0 +1,8 @@
+{
+  "job_id": "clipped_refusal",
+  "feel_artifact": false,
+  "mission": "Prove that a judge cannot receive a clipped artifact even if a director requests it.",
+  "artifact_contracts": [
+    {"id": "clipper_contract", "artifact_name": "clipper.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]}
+  ]
+}

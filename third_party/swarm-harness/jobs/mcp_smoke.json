@@ -1,0 +1,11 @@
+{
+  "job_id": "mcp_smoke",
+  "feel_artifact": true,
+  "mission": "Exercise the five bounded dispatch tools through a local MCP-shaped client. The terminal authority state for this feel-artifact is GATED, never DONE.",
+  "artifact_contracts": [
+    {"id": "mcp_page_contract", "artifact_name": "mcp_page.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "mcp_live_page_contract", "artifact_name": "mcp_live_page.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "source_contract", "artifact_name": "source.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]},
+    {"id": "repaired_contract", "artifact_name": "repaired.html", "format": "html", "minimum_bytes": 256, "validators": ["static_html"]}
+  ]
+}

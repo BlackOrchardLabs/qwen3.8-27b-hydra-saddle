@@ -1,0 +1,11 @@
+{
+  "max_learnings": 1024,
+  "max_relevance_keys": 16,
+  "max_evidence_refs": 16,
+  "max_claim_bytes": 4096,
+  "max_limits_bytes": 2048,
+  "max_injection_bytes": 4096,
+  "max_injection_tokens": 1024,
+  "contradiction_quarantine_threshold": 2,
+  "min_verified_confidence": 0.5
+}

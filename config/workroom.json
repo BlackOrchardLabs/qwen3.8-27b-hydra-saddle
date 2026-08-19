@@ -1,0 +1,10 @@
+{
+  "max_payload_bytes": 4096,
+  "max_posts_per_member": 32,
+  "max_reads_per_member": 32,
+  "max_chatter_rounds": 8,
+  "max_unread_per_member": 8,
+  "max_group_tags_per_member": 8,
+  "max_delivery_batch": 8
+}
+
