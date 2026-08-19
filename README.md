@@ -12,6 +12,8 @@ A cold Qwen worker scores 0/12 on a task it's never cracked. Hand it the 435 byt
 
 **Cold: 0/12. Inherited: 12/12. Without inheritance: cannot. With inheritance: can.**
 
+![Hydra Saddle: a six-headed purple hydra wearing a leather saddle harness with a Qwen badge, next to the pitch: durable verified memory that outlives the agent, wrong work gets blocked, same Qwen weights, proven 0/12 to 12/12 with 435 bytes. Verify, protect, inherit, evolve.](assets/hydra-saddle-card.png)
+
 Powered by the Dispatch Organ.
 
 ## Install and run
