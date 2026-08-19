@@ -1,8 +1,18 @@
 # Hydra Saddle for Qwen 3.8
 
-Stateless agents forget everything at session end. Hydra Saddle lets a new one inherit the verified result of one that no longer exists - 0/12 to 12/12, proven, not promised. Powered by the Dispatch Organ.
+Your local Qwen forgets everything. Give it a memory it can trust.
+
+Run Qwen 3.8-27B on your own machine and every agent you spin up is an amnesiac, forgetting the second the session closes. Yesterday's answer? Gone. It will re-solve the same problem and re-read the same files while burning more tokens chasing rabbits down holes.
+
+Hydra Saddle remembers what worked for your local Qwen. A fresh worker inherits that knowledge, while wrong, irrelevant, bloated work gets blocked at the door instead of poisoning the next run.
+
+No fine-tuning. No bigger model. No giant context window. Same Qwen weights, it just stops starting over.
+
+A cold Qwen worker scores 0/12 on a task it's never cracked. Hand it the 435 bytes an earlier worker verified, and it's 12/12. Experience that outlives the agent that earned it.
 
 **Cold: 0/12. Inherited: 12/12. Without inheritance: cannot. With inheritance: can.**
+
+Powered by the Dispatch Organ.
 
 ## Install and run
 
