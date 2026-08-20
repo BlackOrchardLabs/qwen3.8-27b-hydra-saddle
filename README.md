@@ -1,20 +1,24 @@
 # Hydra Saddle for Qwen 3.8
 
-Your local Qwen forgets everything. Give it a memory it can trust.
+**A research demonstration: verified experience can outlive a stateless local agent — and provably improve the next one.**
 
-Run Qwen 3.8-27B on your own machine and every agent you spin up is an amnesiac, forgetting the second the session closes. Yesterday's answer? Gone. It will re-solve the same problem and re-read the same files while burning more tokens chasing rabbits down holes.
-
-Hydra Saddle remembers what worked for your local Qwen. A fresh worker inherits that knowledge, while wrong, irrelevant, bloated work gets blocked at the door instead of poisoning the next run.
-
-No fine-tuning. No bigger model. No giant context window. Same Qwen weights, it just stops starting over.
-
-A cold Qwen worker scores 0/12 on a task it's never cracked. Hand it the 435 bytes an earlier worker verified, and it's 12/12. Experience that outlives the agent that earned it.
+Every local Qwen agent is an amnesiac: the session closes and everything it learned dies. Hydra Saddle is a working proof that it doesn't have to be that way. A cold Qwen worker scores 0/12 without the discovered result. Give it the 435-byte verified residue left by earlier workers, and it scores 12/12 — same weights, no fine-tuning, no bigger context window. Wrong, irrelevant, and bloated experience gets blocked at the door instead of poisoning the next run.
 
 **Cold: 0/12. Inherited: 12/12. Without inheritance: cannot. With inheritance: can.**
 
-![Hydra Saddle: a six-headed purple hydra wearing a leather saddle harness with a Qwen badge, next to the pitch: durable verified memory that outlives the agent, wrong work gets blocked, same Qwen weights, proven 0/12 to 12/12 with 435 bytes. Verify, protect, inherit, evolve.](assets/hydra-saddle-card.png)
+![Hydra Saddle banner: a cheerful six-headed purple baby hydra wearing a single brown leather saddle harness with a silver emblem, beside the Black Orchard Labs tree logo and the title "Hydra Saddle — Memory it can trust."](assets/hydra-saddle-banner.jpg)
 
 Powered by the Dispatch Organ.
+
+## What this is — and what it isn't yet
+
+This is a reproducible experimental apparatus. You install it, run the three demos against your own local Qwen endpoint, and verify our claims with receipts written to disk — the mechanism (verified inheritance, poison resistance, provenance-bound evidence) working end to end on your machine.
+
+**It is not yet a drop-in memory system for your everyday Qwen workflow.**
+
+That is what we're building next: point it at real work, let agents accumulate verified experience, and tomorrow's fresh worker already knows what yesterday's learned about your repository.
+
+It's being built on the mechanism proven here. If that interests you, star the repo. **The usable version lands here.**
 
 ## Install and run
 
